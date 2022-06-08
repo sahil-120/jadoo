@@ -1,0 +1,309 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Volkhov:wght@700&display=swap');
+
+/* common style starts from here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Volkhov';
+}
+
+h1,h2,h3,h4,h5,h6{
+  
+}
+
+.container{
+    max-width: 1190px;
+    margin: auto;
+}
+
+.section-title p{
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.section-title h2{
+    font-size: 50px;
+    line-height: 64px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+/* common style ends from here */
+
+/* navbar starts from here */
+.navbar{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 30px 0;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item{
+    padding: 16px 30px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+.button-outline{
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+/* navbar ends from here */
+
+/* top-hero section starts from here */
+   #top-hero{
+       display: flex;
+       align-items: center;
+       margin-bottom: 50px;
+   }
+
+   .hero-detaits{
+       width: 50%;
+   }
+
+   .detail-intro{
+       color:#DF6951;
+       font-size: 20px;
+       line-height: 30px;
+       font-weight: 700;
+   }
+
+   .detail-heading{
+       font-size: 84px;
+       line-height: 89px;
+       font-weight: 700;
+       letter-spacing: -4%;
+   }
+
+   .detail-text{
+       font-size: 16px;
+       line-height: 30px;
+       font-weight: 500;
+   }
+
+   .hero-btn{
+       display: inline-block;
+       text-decoration: none;
+       background-color: #F1A501;
+       padding: 17px 27px;
+       box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+       border-radius: 10px;
+       color: #ffffff;
+       margin-top: 25px;
+       border: 2px solid transparent;
+   }
+   .hero-btn:hover{
+       color: black;
+       background-color: transparent;
+       border: 2px solid black;
+   }
+
+   .hero-thumnail{
+     width: 50%;
+   }
+
+   .hero-thumnail img{
+    width: 100%;
+   }
+/* top-hero section ends from here */
+
+/* category section starts from here */
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.category{
+    width: 275px;
+    height: 330px;
+    text-align: center;
+    padding: 42px;
+    border-radius: 15px;
+    margin: 0 10px;
+    
+}
+
+.category:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.category-title{
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.category-text{
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 500;
+}
+/* category section ends from here */
+
+/* top destination starts from here */
+.destination{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+
+.destination-place{
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding:10px;
+}
+
+.place-picture img{
+ width:355px;
+ height: 450px;
+ border-radius: 10px;
+}
+
+.place-details{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.trip-day{
+    text-align: center;
+    font-weight: 500;
+    color: rgb(218, 7, 172);
+}
+/* top destination ends from here */
+
+/* advertisement area starts from here */
+.advertise{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.advertise-brand{
+    width: 230px;
+    padding: 30px 0;
+}
+/* advertisement area ends from here */
+
+/* subscribe area starts from here */
+#subscribe-us{
+   background-image: url("images/bg-decor-1.png");
+   background-repeat: no-repeat;
+   background-position: right;
+}
+.subscribes{
+    background-image: url("images/subscribe-decor-left.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color:#cb3cf7 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 120px;
+    border-radius: 15px;
+
+}
+
+.subscribe h4{
+   font-size: 28px;
+   color: rgb(248, 245, 77);
+}
+
+.email{
+    padding: 19px 50px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+/* subscribe area ends from here */
+
+/* footer starts from here */
+.footer-area{
+    text-align: center;
+    padding: 40px 0;
+    
+}
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    
+    
+}
+
+.footer-div{
+    width: 230px;
+    padding: 40px 0;
+    
+}
+/* footer ends from here */
+
+/* media query starts from here */
+
+/*for mobile*/
+@media screen and (max-width: 668px){
+    .navbar{
+        flex-direction: column;
+    }
+    .nav-menu{
+        flex-direction: column;
+    }
+
+    #top-hero{
+        flex-direction: column-reverse;
+        
+    }
+    .detail-intro{
+        font-size: 17px;
+    }
+    .detail-heading{
+        font-size: 44px;
+        line-height: 45px;
+    }
+    .categories, .destination, .advertise {
+        justify-content: center;
+    }
+
+    .section-title h2 {
+        font-size: 35px;
+
+    }
+
+}
+
+/* for tablet */
+
+@media screen and (min-width: 668px) and (max-width: 992px) {
+  #top-hero, .navbar{
+      width: 90%;
+  }
+  .navbar{
+    flex-direction: column;
+  }
+  .categories{
+      width: 100%;
+      justify-content: center;
+  }
+}
+/* media query ends from here */
